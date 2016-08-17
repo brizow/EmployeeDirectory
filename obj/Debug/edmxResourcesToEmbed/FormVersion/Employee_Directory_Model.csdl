@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Emp_Directory" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WebApplications_EmployeeDirectory">
+    <EntitySet Name="Directories" EntityType="Emp_Directory.Directory" />
+  </EntityContainer>
+  <EntityType Name="Directory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="FName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Email" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Guid" Name="GUID" Nullable="false" />
+    <Property Type="String" Name="JobTitle" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OfficePhone" MaxLength="22" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="MobilePhone" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

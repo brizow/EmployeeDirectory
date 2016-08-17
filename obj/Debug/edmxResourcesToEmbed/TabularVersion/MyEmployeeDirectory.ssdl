@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WebApplicationsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="WebApplicationsModelStoreContainer">
+    <EntitySet Name="BW-Employee_Directory" EntityType="WebApplicationsModel.Store.BW-Employee_Directory" store:Type="Tables" Schema="dbo" Table="BW-Employee.Directory" />
+  </EntityContainer>
+  <EntityType Name="BW-Employee_Directory">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="FName" Type="varchar" MaxLength="30" />
+    <Property Name="LName" Type="varchar" MaxLength="30" />
+    <Property Name="Email" Type="varchar" MaxLength="50" />
+    <Property Name="JobTitle" Type="varchar" MaxLength="50" />
+    <Property Name="OfficePhone" Type="varchar" MaxLength="22" />
+    <Property Name="MobilePhone" Type="varchar" MaxLength="20" />
+    <Property Name="Location" Type="nchar" MaxLength="30" />
+  </EntityType>
+</Schema>

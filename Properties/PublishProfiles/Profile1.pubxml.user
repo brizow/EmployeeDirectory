@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2015-09-09T08:54:19.8331261-04:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\Brett.Wingard\Documents\EmployeeDirectoryRedo</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Archive/Default.aspx">
+      <publishTime>09/08/2015 13:47:41</publishTime>
+    </File>
+    <File Include="Archive/viewdetail.aspx">
+      <publishTime>09/04/2015 09:59:25</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>09/08/2015 11:24:04</publishTime>
+    </File>
+    <File Include="bin/Default.aspx">
+      <publishTime>09/09/2015 08:52:53</publishTime>
+    </File>
+    <File Include="bin/Default.aspx.cs">
+      <publishTime>09/09/2015 08:52:34</publishTime>
+    </File>
+    <File Include="bin/Default.aspx.designer.cs">
+      <publishTime>09/09/2015 08:51:39</publishTime>
+    </File>
+    <File Include="bin/EmployeeDirectory.dll">
+      <publishTime>10/06/2015 15:20:13</publishTime>
+    </File>
+    <File Include="bin/Employee_Directory_Model.Designer.cs">
+      <publishTime>09/08/2015 14:26:22</publishTime>
+    </File>
+    <File Include="bin/intrbg.png">
+      <publishTime>08/31/2015 10:29:56</publishTime>
+    </File>
+    <File Include="bin/lancasterlogotop.png">
+      <publishTime>08/31/2015 10:29:56</publishTime>
+    </File>
+    <File Include="bin/Main.aspx">
+      <publishTime>09/08/2015 15:23:52</publishTime>
+    </File>
+    <File Include="bin/Main.aspx.cs">
+      <publishTime>09/08/2015 15:23:52</publishTime>
+    </File>
+    <File Include="bin/Main.aspx.designer.cs">
+      <publishTime>09/08/2015 15:23:52</publishTime>
+    </File>
+    <File Include="bin/style.css">
+      <publishTime>09/08/2015 14:05:08</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>09/09/2015 08:52:53</publishTime>
+    </File>
+    <File Include="intrbg.png">
+      <publishTime>08/31/2015 10:29:56</publishTime>
+    </File>
+    <File Include="lancasterlogotop.png">
+      <publishTime>08/31/2015 10:29:56</publishTime>
+    </File>
+    <File Include="Main.aspx">
+      <publishTime>09/08/2015 15:23:52</publishTime>
+    </File>
+    <File Include="style.css">
+      <publishTime>09/08/2015 14:05:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/09/2015 08:40:21</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+D:\Sites\Employee_Directory\bin\EmployeeDirectory.dll
+D:\Sites\Employee_Directory\bin\EmployeeDirectory.pdb
+D:\Sites\Employee_Directory\obj\Debug\EmployeeDirectory.dll
+D:\Sites\Employee_Directory\obj\Debug\EmployeeDirectory.pdb

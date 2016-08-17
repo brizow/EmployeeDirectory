@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WebApplicationsModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="WebApplicationsModelStoreContainer">
+          <EntitySet Name="BW-Employee_Directory" EntityType="WebApplicationsModel.Store.BW-Employee_Directory" store:Type="Tables" Schema="dbo" Table="BW-Employee.Directory" />
+        </EntityContainer>
+        <EntityType Name="BW-Employee_Directory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FName" Type="varchar" MaxLength="30" />
+          <Property Name="LName" Type="varchar" MaxLength="30" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="JobTitle" Type="varchar" MaxLength="50" />
+          <Property Name="OfficePhone" Type="varchar" MaxLength="22" />
+          <Property Name="MobilePhone" Type="varchar" MaxLength="20" />
+          <Property Name="Location" Type="nchar" MaxLength="30" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WebApplicationsModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="WebApplicationsEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="My_Employee_Directory" EntityType="WebApplicationsModel.My_Employee_Directory" />
+        </EntityContainer>
+        <EntityType Name="My_Employee_Directory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="LName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="JobTitle" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="OfficePhone" Type="String" MaxLength="22" Unicode="false" FixedLength="false" />
+          <Property Name="MobilePhone" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Location" Type="String" MaxLength="30" Unicode="true" FixedLength="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WebApplicationsModelStoreContainer" CdmEntityContainer="WebApplicationsEntities">
+          <EntitySetMapping Name="My_Employee_Directory">
+            <EntityTypeMapping TypeName="WebApplicationsModel.My_Employee_Directory">
+              <MappingFragment StoreEntitySet="BW-Employee_Directory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="FName" ColumnName="FName" />
+                <ScalarProperty Name="LName" ColumnName="LName" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="JobTitle" ColumnName="JobTitle" />
+                <ScalarProperty Name="OfficePhone" ColumnName="OfficePhone" />
+                <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+                <ScalarProperty Name="Location" ColumnName="Location" />
+                <Condition ColumnName="FName" IsNull="false" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="BWEmployeeDirectory">
+        <EntityTypeShape EntityType="WebApplicationsModel.My_Employee_Directory" Width="1.875" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
