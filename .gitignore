@@ -1,4 +1,4 @@
-Thumbs.db
+# git ignore fileThumbs.db
 *.obj
 *.exe
 *.pdb
